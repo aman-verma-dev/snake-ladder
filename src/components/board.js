@@ -53,7 +53,8 @@ export default class Board extends React.Component {
             if (newPos === tile.snake.from) {
                 newPos = tile.snake.to;
             }
-        } else if (tile.ladder) {
+        }
+        if (tile.ladder) {
             if (newPos === tile.ladder.to) {
                 newPos = tile.ladder.from;
             }
@@ -92,7 +93,7 @@ export default class Board extends React.Component {
             num={tile.tileNum} 
             style={tile.style} 
             snake={tile.snake} 
-            ladders={tile.ladders}
+            ladder={tile.ladder}
             playerPos={tile.playerPos}
         />
           </div>  
