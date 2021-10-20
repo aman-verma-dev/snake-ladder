@@ -1,0 +1,17 @@
+.tile {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+}
+
+.dark {
+    background-color: grey;
+}
+
+.light {
+    background-color: #fff;
+}
+
+.info {
+    font-size: 10px;
+}
