@@ -99,10 +99,14 @@ export default class Board extends React.Component {
           </div>  
       )
     });
-    return <div id="board">
-        {tiles}
-        <div onClick={this.rollDice}>Click for Roll!!</div>
-            <div>{`Result: ${rollVal}`}</div>
-    </div>;
+    return (
+        <div className='layout'>
+            <div id="board">
+                {tiles}
+            </div>
+            <div onClick={this.rollDice}>Click for Roll!! </div>
+            <div>{` Result: ${rollVal}`}</div>
+        </div>
+    )
   }
 }
